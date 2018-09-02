@@ -1,8 +1,8 @@
-# string-format-builder
+# format-string-builder
 Simple JS string builder
 
 ## Installation
-    npm install string-format-builder
+    npm install format-string-builder
     
 ## Initialization
 ```javascript

@@ -1,11 +1,12 @@
 declare const module;
 
 class FormatStringBuilder {
-	private nl: string = "\n";
+	private nl: string;
 	private str: string;
 
-	constructor(str: string = "") {
-		this.str = str;
+	constructor(str: string, nl?: string) {
+		this.str = str ? str : "";
+		this.nl = nl ? nl : "\n";
 	}
 
 	get length(): number {
@@ -18,10 +19,6 @@ class FormatStringBuilder {
 
 	get newline(): string {
 		return this.nl;
-	}
-
-	set newline(newline: string) {
-		this.nl = newline;
 	}
 
 	append(str: string): FormatStringBuilder {

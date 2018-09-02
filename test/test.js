@@ -51,8 +51,8 @@ describe("Format string builder tests", () => {
 		const Builder = new FormatStringBuilder();
 		expect(Builder.newline).to.equal("\n");
 
-		Builder.newline = "rakija";
-		expect(Builder.newline).to.equal("rakija");
+		const Builder2 = new FormatStringBuilder("","rakija");
+		expect(Builder2.newline).to.equal("rakija");
 	});
 });
 

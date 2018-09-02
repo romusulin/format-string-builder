@@ -10,8 +10,8 @@ var FormatStringBuilder = require("format-string-builder");
 const Builder = new FormatStringBuilder();
 ```
 ## Functions
-### constructor(str: string)
-Sets the string, if none is supplied, uses empty string.
+### constructor(str: string, nl: string)
+Sets the string and new line delimiter. If none are supplied, uses empty string and "\n" as delimiter.
 ```javascript
 const Builder = new FormatStringBuilder("Test string");
 ```
@@ -52,11 +52,8 @@ const builtString = Builder.toString();
 ```
 ## Properties
 ### newline
-Get/set
 Returns the set newline delimiter.
 ### length
-Get
-Returns the length of the built string
+Returns the length of the built string.
 ### lines
-Get
-Returns a split string array
+Returns a split string array.

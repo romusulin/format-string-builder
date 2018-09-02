@@ -39,6 +39,14 @@ describe("Format string builder tests", () => {
 
 	});
 
+	it("should work backwards", () => {
+		const Builder = new FormatStringBuilder();
+		Builder.format("0: {2}, 1: {1}, 2: {0}", "2", "1", "0");
+
+		expect(Builder.toString()).to.equal("0: 0, 1: 1, 2: 2");
+		expect(Builder.clear().toString()).to.equal("");
+	});
+
 	it("should get and set newline", () => {
 		const Builder = new FormatStringBuilder();
 		expect(Builder.newline).to.equal("\n");

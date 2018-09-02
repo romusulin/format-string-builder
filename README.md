@@ -6,7 +6,7 @@ Simple JS string builder
 
 ## Initialization
 ```javascript
-var FormatStringBuilder = require("../lib/format-string-builder.js");
+var FormatStringBuilder = require("format-string-builder");
 const Builder = new FormatStringBuilder();
 ```
 ## Functions

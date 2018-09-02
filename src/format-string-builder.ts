@@ -12,11 +12,11 @@ class FormatStringBuilder {
 		return this.str.length;
 	}
 
-	get lines(): string | string[] {
+	get lines(): string[] {
 		return this.str.split(this.nl);
 	}
 
-	get newline() {
+	get newline(): string {
 		return this.nl;
 	}
 
@@ -51,7 +51,7 @@ class FormatStringBuilder {
 		return this.append(formatString);
 	}
 
-	clear() {
+	clear(): FormatStringBuilder {
 		this.str = "";
 
 		return this;

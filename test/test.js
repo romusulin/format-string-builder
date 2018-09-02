@@ -19,6 +19,7 @@ describe("Format string builder tests", () => {
 
 	it("should append and appendLn", () => {
 		const Builder = new FormatStringBuilder();
+
 		Builder.append("first line");
 		expect(Builder.toString()).to.equal("first line");
 
@@ -33,6 +34,8 @@ describe("Format string builder tests", () => {
 		expect(Builder.lines.length).to.equal(2);
 		expect(Builder.lines[0]).to.equal("first line still first line");
 		expect(Builder.lines[1]).to.equal("second line");
+
+		expect(Builder.length).to.equal("first line still first line\nsecond line".length)
 
 	});
 

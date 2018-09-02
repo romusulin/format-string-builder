@@ -1,5 +1,5 @@
 var expect = require("chai").expect;
-var FormatStringBuilder = require("../lib/format-string-builder.js");
+var FormatStringBuilder = require("../lib/format-string-builder");
 describe("Format string builder tests", () => {
 	it ("should format single arg", () => {
 		const Builder = new FormatStringBuilder();

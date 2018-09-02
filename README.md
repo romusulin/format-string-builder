@@ -1,9 +1,9 @@
-# string-format-builder
+# format-string-builder
 Simple JS string builder
 
 ## Installation
-    npm install string-format-builder
-    
+    npm install format-string-builder
+
 ## Initialization
 ```javascript
 var FormatStringBuilder = require("../lib/format-string-builder.js");
@@ -12,7 +12,7 @@ const Builder = new FormatStringBuilder();
 ## Functions
 ### constructor(str: string)
 Sets the string, if none is supplied, uses empty string.
-```javascript    
+```javascript
 const Builder = new FormatStringBuilder("Test string");
 ```
 
@@ -33,23 +33,23 @@ Replaces placeholders with given arguments.
 ```javascript
 Builder.format("Hello {0}, my name is {1} {2}", "reader", "Uncle", "Bob");
 ```
-    
+
 The string is formatted as:
 
     "Hello reader, my name is Uncle Bob"
-    
+
 ### clear()
 Clears the string.
 
 ```javascript
 Builder.clear();
 ```
-    
+
 ### toString()
 Returns the built string.
 ```javascript
 const builtString = Builder.toString();
-```    
+```
 ## Properties
 ### newline
 Get/set

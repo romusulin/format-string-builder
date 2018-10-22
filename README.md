@@ -13,10 +13,12 @@ const Builder = new FormatStringBuilder();
 ### constructor(str: string, nl: string)
 Sets the string and new line delimiter. If none are supplied, uses empty string and "\n" as delimiter.
 ```javascript
-const Builder = new FormatStringBuilder("Test string");
+const Builder = new FormatStringBuilder();
+const Builder = new FormatStringBuilder("My string");
+const Builder = new FormatStringBuilder("My string", "\r\n");
 ```
 
-### append(str: string
+### append(str: string)
 Appends the given string to builder.
 ```javascript
 Builder.append("I forgot this part");

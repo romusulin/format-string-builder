@@ -40,9 +40,9 @@ class FormatStringBuilder {
 			const matchedString: string = matches[0];
 			const index: number = Number(matches[1]) + 1;
 
-            if (args[index]) {
-                formatString = formatString.replace(matchedString, args[index]);
-            }
+			if (args[index]) {
+				formatString = formatString.replace(matchedString, args[index]);
+			}
 		}
 
 		return this.append(formatString);

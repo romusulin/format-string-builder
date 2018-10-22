@@ -1,12 +1,12 @@
 {
   "name": "format-string-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple JS string builder",
   "main": ".\\lib\\format-string-builder.js",
   "scripts": {
-	"compile-and-test": "npm run compile && npm test",
-	"test": "mocha .\\test\\test.js",
-	"compile": "tsc"
+    "compile-and-test": "npm run compile && npm test",
+    "test": "nyc mocha .\\test\\test.js",
+    "compile": "tsc"
   },
   "author": "romusulin",
   "license": "ISC",
@@ -14,5 +14,9 @@
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "typescript": "^3.0.3"
+  },
+  "repository": {
+	"type" : "git",
+	"url" : "https://github.com/romusulin/format-string-builder.git"
   }
 }

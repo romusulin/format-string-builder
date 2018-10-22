@@ -51,8 +51,14 @@ describe("Format string builder tests", () => {
 		const Builder = new FormatStringBuilder();
 		expect(Builder.newline).to.equal("\n");
 
-		const Builder2 = new FormatStringBuilder("","rakija");
+		const Builder2 = new FormatStringBuilder(undefined ,"rakija");
 		expect(Builder2.newline).to.equal("rakija");
+	});
+
+	it("empty values", () => {
+		// Does not throw an error
+		const Builder = new FormatStringBuilder();
+		Builder.format("0: {2}, 1: {1}, 2: {0}");
 	});
 });
 
